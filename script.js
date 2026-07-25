@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initMobileMenu();
     initTypingEffect();
+    initTypewriterSubtitle();
     initCounters();
     initScrollReveal();
     initFilters();
     initBentoGlow();
     initSmoothScroll();
     initActiveNav();
+    initSkillBars();
 });
 
 /* ===========================
@@ -43,8 +45,26 @@ function initNeuralNetwork() {
             vx: (Math.random() - 0.5) * 0.4,
             vy: (Math.random() - 0.5) * 0.4,
             r: Math.random() * 2 + 1,
+    });
+}
+
+/* ===========================
+   SKILL BARS ANIMATION
+   =========================== */
+function initSkillBars() {
+    const bars = document.querySelectorAll('.skill-bar-fill');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const width = bar.dataset.width;
+                bar.style.width = width + '%';
+                observer.unobserve(bar);
+            }
         });
-    }
+    }, { threshold: 0.3 });
+    bars.forEach(bar => observer.observe(bar));
+}
 
     function draw() {
         ctx.clearRect(0, 0, width, height);
@@ -164,22 +184,72 @@ function initTypingEffect() {
 }
 
 /* ===========================
+   TYPEWRITER SUBTITLE
+   =========================== */
+function initTypewriterSubtitle() {
+    const el = document.getElementById('typewriterSubtitle');
+    if (!el) return;
+    const phrases = [
+        'AI Engineer',
+        'LLM Builder',
+        'RAG Architect',
+        'Multi-Agent Systems',
+        'Transformer Fine-Tuner',
+        'Production AI'
+    ];
+    let pi = 0, ci = 0, deleting = false;
+
+    function type() {
+        const current = phrases[pi];
+        if (!deleting) {
+            el.textContent = current.slice(0, ++ci);
+            if (ci === current.length) {
+                deleting = true;
+                setTimeout(type, 2500);
+                return;
+            }
+            setTimeout(type, 90);
+        } else {
+            el.textContent = current.slice(0, --ci);
+            if (ci === 0) {
+                deleting = false;
+                pi = (pi + 1) % phrases.length;
+            }
+            setTimeout(type, 45);
+        }
+    }
+    type();
+}
+
+/* ===========================
    COUNTER ANIMATION
    =========================== */
 function initCounters() {
-    const counters = document.querySelectorAll('.stat-num');
+    const counters = document.querySelectorAll('.counter-num');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const el = entry.target;
-                const target = +el.dataset.target;
-                let count = 0;
-                const step = Math.max(1, Math.ceil(target / 50));
+                const isDecimal = el.dataset.decimal === 'true';
+                const target = parseFloat(el.dataset.target);
+                let current = 0;
+                const duration = 1500;
+                const steps = 60;
+                const increment = target / steps;
+                const interval = duration / steps;
+
                 const timer = setInterval(() => {
-                    count = Math.min(count + step, target);
-                    el.textContent = count;
-                    if (count >= target) clearInterval(timer);
-                }, 40);
+                    current = Math.min(current + increment, target);
+                    if (isDecimal) {
+                        el.textContent = current.toFixed(3);
+                    } else {
+                        el.textContent = Math.round(current);
+                    }
+                    if (current >= target) {
+                        el.textContent = isDecimal ? target.toFixed(3) : target;
+                        clearInterval(timer);
+                    }
+                }, interval);
                 observer.unobserve(el);
             }
         });

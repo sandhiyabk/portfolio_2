@@ -18,16 +18,14 @@
 
     <nav class="navbar" id="navbar">
         <div class="nav-content">
-            <a href="#hero" class="logo">
-                <span class="logo-bracket">&lt;</span>sandhiya<span class="logo-bracket">/&gt;</span>
-            </a>
+            <a href="#hero" class="logo">SANDHIYABK</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#hero" class="nav-active">home</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#skills">skills</a></li>
-                <li><a href="#journey">journey</a></li>
                 <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#experience">experience</a></li>
                 <li><a href="#contact">contact</a></li>
+                <li><a href="#contact" class="hire-btn">Hire Me</a></li>
             </ul>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -38,6 +36,12 @@
     <!-- HERO -->
     <section id="hero" class="hero">
         <div class="hero-grid-bg"></div>
+        <div class="floating-code" style="left:5%;animation-duration:18s;animation-delay:0s;font-size:.65rem">from langchain import RAG</div>
+        <div class="floating-code" style="left:15%;animation-duration:22s;animation-delay:3s">model.transcribe(audio)</div>
+        <div class="floating-code" style="left:75%;animation-duration:20s;animation-delay:6s;font-size:.6rem">ChromaDB.query(embeddings)</div>
+        <div class="floating-code" style="left:85%;animation-duration:25s;animation-delay:2s">FastAPI app = FastAPI()</div>
+        <div class="floating-code" style="left:45%;animation-duration:19s;animation-delay:8s;font-size:.6rem">def validate_ast(code):</div>
+        <div class="floating-code" style="left:60%;animation-duration:23s;animation-delay:5s;font-size:.65rem">pipeline.run(source_code)</div>
         <div class="hero-content">
             <div class="terminal-window hero-terminal">
                 <div class="terminal-bar">
@@ -57,47 +61,26 @@
                 </div>
             </div>
 
-            <h1 class="hero-name glitch" data-text="Sandhiya">Sandhiya</h1>
+            <h1 class="hero-name glitch" data-text="SANDHIYA BK">SANDHIYA BK</h1>
             <p class="hero-subtitle">
-                <span class="code-tag">&lt;</span>AI Engineer<span class="code-tag">/&gt;</span>
-                <span class="divider-dot">&bull;</span>
-                <span class="code-tag">&lt;</span>LLM Builder<span class="code-tag">/&gt;</span>
-                <span class="divider-dot">&bull;</span>
-                <span class="code-tag">&lt;</span>RAG Architect<span class="code-tag">/&gt;</span>
+                <span id="typewriterSubtitle" class="typewriter-subtitle"></span><span class="cursor">_</span>
             </p>
             <p class="hero-desc">
-                Building intelligent systems that bridge <span class="highlight">AI research</span> and <span class="highlight">real-world impact</span>.
-                From multi-agent healthcare pipelines to NLP transformers — I turn complex problems into elegant solutions.
+                Building production-grade AI systems — RAG pipelines, LLM applications, and multi-agent architectures. From fine-tuning transformers to deploying real products.
             </p>
 
             <div class="hero-stats">
-                <div class="stat-block">
-                    <span class="stat-num" data-target="12">0</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-block">
-                    <span class="stat-num" data-target="6">0</span>
-                    <span class="stat-label">AI Domains</span>
-                </div>
-                <div class="stat-block">
-                    <span class="stat-num" data-target="38">0</span>
-                    <span class="stat-label">Repos</span>
-                </div>
-                <div class="stat-block">
-                    <span class="stat-num" data-target="5">0</span>
-                    <span class="stat-label">Tech Stacks</span>
-                </div>
+                <span class="hero-stat"><strong>3</strong> Deployed AI Projects</span>
+                <span class="hero-stat"><strong>9.185</strong> CGPA Gold Medalist</span>
+                <span class="hero-stat">Building in <strong>Public</strong></span>
             </div>
 
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-terminal"></i> ./explore_projects
+                    <i class="fas fa-terminal"></i> View Projects
                 </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-paper-plane"></i> ./contact_me
-                </a>
-                <a href="https://github.com/sandhiyabk" target="_blank" class="btn btn-ghost">
-                    <i class="fab fa-github"></i> github
+                <a href="https://drive.google.com/uc?export=download&id=194WvjgptmPMCLAbzGXXH1fYV_v3ULaED" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-download"></i> Download Resume
                 </a>
             </div>
         </div>
@@ -127,30 +110,31 @@
                 <button class="filter-btn" data-filter="tools">Dev Tools</button>
             </div>
 
-            <!-- FEATURED / FLAGSHIP -->
+            <!-- FLAGSHIP PROJECTS -->
             <div class="project-section">
                 <h3 class="subsection-title reveal"><span class="line"></span> Flagship Projects</h3>
                 <div class="bento-grid featured-grid">
 
-                    <!-- Code Review System -->
+                    <!-- DevCompass -->
                     <article class="bento-card bento-large reveal" data-category="llm tools">
-                        <div class="bento-visual code-review-visual">
-                            <div class="code-block-display">
-                                <div class="code-line"><span class="code-kw">def</span> <span class="code-fn">review_code</span>(diff):</div>
-                                <div class="code-line indent"><span class="code-kw">return</span> ai.analyze(diff)</div>
-                                <div class="code-line"><span class="code-comment"># AI-powered insights</span></div>
+                        <div class="bento-visual devcompass-visual">
+                            <div class="compass-mock">
+                                <div class="compass-ring"></div>
+                                <div class="compass-needle"></div>
+                                <span class="compass-label">AI</span>
                             </div>
-                            <div class="bento-icon-overlay"><i class="fas fa-code-branch"></i></div>
+                            <div class="bento-icon-overlay"><i class="fas fa-compass"></i></div>
                         </div>
                         <div class="bento-content">
-                            <span class="project-tag tag-llm">LLM + DevTools</span>
-                            <h4 class="project-name">Code Review System</h4>
-                            <p class="project-desc">Multi-layer AI code review assistant using AST parsing, RAG retrieval, and LLM inference (Llama 3.3-70B) — with hallucination validation and quality scoring.</p>
+                            <span class="project-tag tag-llm">AI + DevTools</span>
+                            <h4 class="project-name">DevCompass</h4>
+                            <p class="project-desc">AI-powered developer guidance tool — explains any Jira ticket, suggests architecture decisions, and provides intelligent development direction with database-backed insights.</p>
                             <div class="project-tech">
-                                <span>Python</span><span>ChromaDB</span><span>Groq LLM</span><span>FastAPI</span><span>Streamlit</span>
+                                <span>FastAPI</span><span>PostgreSQL</span><span>LangChain</span><span>Groq</span><span>Streamlit</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/code-review-system" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                                <a href="https://devcompass-km6znwo7aqxpzfjqeydggp.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/sandhiyabk/DevCompass" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
@@ -176,14 +160,70 @@
                                 <span>Whisper</span><span>Pyannote</span><span>Groq LLM</span><span>Streamlit</span>
                             </div>
                             <div class="project-links">
+                                <a href="https://meetingintelligent-u6lhdbfuxrksr6libjdtpg.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
                                 <a href="https://github.com/sandhiyabk/meeting_intelligent" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
                     </article>
 
+                    <!-- Code Review System -->
+                    <article class="bento-card bento-large reveal" data-category="llm tools">
+                        <div class="bento-visual code-review-visual">
+                            <div class="code-block-display">
+                                <div class="code-line"><span class="code-kw">def</span> <span class="code-fn">review_code</span>(diff):</div>
+                                <div class="code-line indent"><span class="code-kw">return</span> ai.analyze(diff)</div>
+                                <div class="code-line"><span class="code-comment"># AI-powered insights</span></div>
+                            </div>
+                            <div class="bento-icon-overlay"><i class="fas fa-code-branch"></i></div>
+                        </div>
+                        <div class="bento-content">
+                            <span class="project-tag tag-llm">LLM + DevTools</span>
+                            <h4 class="project-name">Code Review System</h4>
+                            <p class="project-desc">Multi-layer AI code review assistant using AST parsing, RAG retrieval, and LLM inference (Llama 3.3-70B) — with hallucination validation and quality scoring.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>ChromaDB</span><span>Groq LLM</span><span>FastAPI</span><span>Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://sandhiyabk-ai-code-review-assistant.hf.space/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/sandhiyabk/code-review-system" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="bento-glow"></div>
+                    </article>
+
+                    <!-- Fake News Detection -->
+                    <article class="bento-card bento-large reveal" data-category="nlp">
+                        <div class="bento-visual fakenews-visual">
+                            <div class="fake-news-mock">
+                                <div class="news-item real"><i class="fas fa-check-circle"></i> Real News</div>
+                                <div class="news-item fake"><i class="fas fa-times-circle"></i> Fake News</div>
+                            </div>
+                            <div class="bento-icon-overlay"><i class="fas fa-shield-alt"></i></div>
+                        </div>
+                        <div class="bento-content">
+                            <span class="project-tag tag-nlp">NLP</span>
+                            <h4 class="project-name">Fake News Detection</h4>
+                            <p class="project-desc">Fine-tuned DeBERTa-v3 transformer for binary misinformation detection — model-level AI work, not just API calls.</p>
+                            <div class="project-tech">
+                                <span>DeBERTa-v3</span><span>Transformers</span><span>PyTorch</span><span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sandhiyabk/Fake-News-Detection-DeBERTa-v3-Transformer-" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="bento-glow"></div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- DATA SCIENCE PROJECTS -->
+            <div class="project-section">
+                <h3 class="subsection-title reveal"><span class="line"></span> Data Science Projects</h3>
+                <div class="bento-grid standard-grid">
+
                     <!-- Patient Journey System -->
-                    <article class="bento-card bento-large reveal" data-category="healthcare llm">
+                    <article class="bento-card reveal" data-category="healthcare llm">
                         <div class="bento-visual patient-visual">
                             <div class="agent-flow">
                                 <div class="agent-node"><i class="fas fa-user-md"></i><span>Agent 1</span></div>
@@ -202,86 +242,8 @@
                                 <span>LangGraph</span><span>FastAPI</span><span>Streamlit</span><span>Python</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/Patient_tracker_system" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                                 <a href="https://sandhiyabk-patient-tracker-system-streamlit-app-4troin.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
-                            </div>
-                        </div>
-                        <div class="bento-glow"></div>
-                    </article>
-
-                    <!-- DevCompass -->
-                    <article class="bento-card bento-large reveal" data-category="llm tools">
-                        <div class="bento-visual devcompass-visual">
-                            <div class="compass-mock">
-                                <div class="compass-ring"></div>
-                                <div class="compass-needle"></div>
-                                <span class="compass-label">AI</span>
-                            </div>
-                            <div class="bento-icon-overlay"><i class="fas fa-compass"></i></div>
-                        </div>
-                        <div class="bento-content">
-                            <span class="project-tag tag-llm">AI + DevTools</span>
-                            <h4 class="project-name">DevCompass</h4>
-                            <p class="project-desc">AI-powered developer guidance tool — analyzes codebases, suggests architecture decisions, and provides intelligent development direction with database-backed insights.</p>
-                            <div class="project-tech">
-                                <span>Python</span><span>FastAPI</span><span>Streamlit</span><span>LLM</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/DevCompass" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
-                            </div>
-                        </div>
-                        <div class="bento-glow"></div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- AI/ML Projects -->
-            <div class="project-section">
-                <h3 class="subsection-title reveal"><span class="line"></span> AI & Machine Learning</h3>
-                <div class="bento-grid standard-grid">
-
-                    <!-- Fake News Detection -->
-                    <article class="bento-card reveal" data-category="nlp">
-                        <div class="bento-visual fakenews-visual">
-                            <div class="fake-news-mock">
-                                <div class="news-item real"><i class="fas fa-check-circle"></i> Real News</div>
-                                <div class="news-item fake"><i class="fas fa-times-circle"></i> Fake News</div>
-                            </div>
-                            <div class="bento-icon-overlay"><i class="fas fa-shield-alt"></i></div>
-                        </div>
-                        <div class="bento-content">
-                            <span class="project-tag tag-nlp">NLP</span>
-                            <h4 class="project-name">Fake News Detection</h4>
-                            <p class="project-desc">DeBERTa-v3 transformer model for high-accuracy misinformation detection in news articles.</p>
-                            <div class="project-tech">
-                                <span>DeBERTa-v3</span><span>Transformers</span><span>NLP</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/Fake-News-Detection-DeBERTa-v3-Transformer-" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
-                            </div>
-                        </div>
-                        <div class="bento-glow"></div>
-                    </article>
-
-                    <!-- Interior Design Chatbot -->
-                    <article class="bento-card reveal" data-category="llm">
-                        <div class="bento-visual interior-visual">
-                            <div class="interior-mock">
-                                <div class="room-outline">
-                                    <span class="room-label"><i class="fas fa-couch"></i> AI Design</span>
-                                </div>
-                            </div>
-                            <div class="bento-icon-overlay"><i class="fas fa-paint-roller"></i></div>
-                        </div>
-                        <div class="bento-content">
-                            <span class="project-tag tag-llm">GenAI + Vision</span>
-                            <h4 class="project-name">Interior Design Chatbot</h4>
-                            <p class="project-desc">RAG-based interior design assistant using FAISS vector search, sentence-transformers, and GPT for budget-aware product recommendations with conversation memory.</p>
-                            <div class="project-tech">
-                                <span>RAG</span><span>FAISS</span><span>OpenAI</span><span>Streamlit</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/interior_design_chatbot" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                                <a href="https://github.com/sandhiyabk/Patient_tracker_system" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
@@ -307,8 +269,8 @@
                                 <span>dbt</span><span>Snowflake</span><span>FastAPI</span><span>ETL</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/Drug-Risk-Intelligent-System" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                                 <a href="https://sandhiyabk-drug-risk-intelligen-streamlit-risk-dashboard-yuxk3a.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/sandhiyabk/Drug-Risk-Intelligent-System" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
@@ -334,34 +296,40 @@
                                 <span>Python</span><span>Streamlit</span><span>ML</span><span>SQL</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/Pharma_sales_territory_optimizer" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                                 <a href="https://pharmasalesterritoryoptimizer-iheracruaouep3jdy4ghad.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/sandhiyabk/Pharma_sales_territory_optimizer" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
                     </article>
+                </div>
+            </div>
 
-                    <!-- AI Skill Gap Detector -->
+            <!-- SIDE PROJECTS -->
+            <div class="project-section">
+                <h3 class="subsection-title reveal"><span class="line"></span> Side Projects</h3>
+                <div class="bento-grid standard-grid">
+
+                    <!-- Interior Design Chatbot -->
                     <article class="bento-card reveal" data-category="llm">
-                        <div class="bento-visual skillgap-visual">
-                            <div class="rag-mock">
-                                <span class="rag-stage">RAG</span>
-                                <span class="rag-arrow">&rarr;</span>
-                                <span class="rag-stage">FAISS</span>
-                                <span class="rag-arrow">&rarr;</span>
-                                <span class="rag-stage">Mistral</span>
+                        <div class="bento-visual interior-visual">
+                            <div class="interior-mock">
+                                <div class="room-outline">
+                                    <span class="room-label"><i class="fas fa-couch"></i> AI Design</span>
+                                </div>
                             </div>
-                            <div class="bento-icon-overlay"><i class="fas fa-search"></i></div>
+                            <div class="bento-icon-overlay"><i class="fas fa-paint-roller"></i></div>
                         </div>
                         <div class="bento-content">
-                            <span class="project-tag tag-llm">GenAI + RAG</span>
-                            <h4 class="project-name">AI Skill Gap Detector</h4>
-                            <p class="project-desc">RAG system using FAISS and Mistral-7B to analyze task descriptions and identify critical skill gaps.</p>
+                            <span class="project-tag tag-llm">GenAI + Vision</span>
+                            <h4 class="project-name">Interior Design Chatbot</h4>
+                            <p class="project-desc">RAG-based interior design assistant using FAISS vector search, sentence-transformers, and GPT for budget-aware product recommendations with conversation memory.</p>
                             <div class="project-tech">
-                                <span>Mistral-7B</span><span>RAG</span><span>FAISS</span><span>Gradio</span>
+                                <span>RAG</span><span>FAISS</span><span>OpenAI</span><span>Streamlit</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandhiyabk/Ai_skillgap_detector" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
+                                <a href="https://sandhiyabk-interior-design-chatbot-app-u87ir0.streamlit.app/" target="_blank" class="link-btn accent"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="https://github.com/sandhiyabk/interior_design_chatbot" target="_blank" class="link-btn"><i class="fab fa-github"></i> Source</a>
                             </div>
                         </div>
                         <div class="bento-glow"></div>
@@ -442,86 +410,44 @@
                 <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
                 <p class="section-desc">Tools and technologies I use to build intelligent systems</p>
             </div>
-            <div class="skills-terminal reveal">
-                <div class="terminal-window">
-                    <div class="terminal-bar">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">skills.sh</span>
-                    </div>
-                    <div class="terminal-body skills-terminal-body">
-                        <div class="skill-group">
-                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat ai_ml.txt</span></p>
-                            <div class="skill-tags">
-                                <span class="skill-chip primary">Transformers</span>
-                                <span class="skill-chip primary">LangGraph</span>
-                                <span class="skill-chip primary">Multi-Agent AI</span>
-                                <span class="skill-chip primary">RAG</span>
-                                <span class="skill-chip primary">LLMs</span>
-                                <span class="skill-chip primary">NLP</span>
-                                <span class="skill-chip primary">CNN</span>
-                                <span class="skill-chip primary">Deep Learning</span>
-                                <span class="skill-chip primary">DeBERTa</span>
-                                <span class="skill-chip primary">Mistral-7B</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat data_eng.txt</span></p>
-                            <div class="skill-tags">
-                                <span class="skill-chip secondary">dbt</span>
-                                <span class="skill-chip secondary">Snowflake</span>
-                                <span class="skill-chip secondary">SQL</span>
-                                <span class="skill-chip secondary">ETL Pipelines</span>
-                                <span class="skill-chip secondary">Data Modeling</span>
-                                <span class="skill-chip secondary">FAERS</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat frameworks.txt</span></p>
-                            <div class="skill-tags">
-                                <span class="skill-chip tertiary">FastAPI</span>
-                                <span class="skill-chip tertiary">Streamlit</span>
-                                <span class="skill-chip tertiary">LangChain</span>
-                                <span class="skill-chip tertiary">Gradio</span>
-                                <span class="skill-chip tertiary">Docker</span>
-                                <span class="skill-chip tertiary">REST APIs</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat languages.txt</span></p>
-                            <div class="skill-tags">
-                                <span class="skill-chip">Python</span>
-                                <span class="skill-chip">JavaScript</span>
-                                <span class="skill-chip">TypeScript</span>
-                                <span class="skill-chip">SQL</span>
-                                <span class="skill-chip">C</span>
-                                <span class="skill-chip">HTML/CSS</span>
-                            </div>
-                        </div>
-                        <div class="skill-group">
-                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cmd">cat tools_cloud.txt</span></p>
-                            <div class="skill-tags">
-                                <span class="skill-chip">Git/GitHub</span>
-                                <span class="skill-chip">AWS</span>
-                                <span class="skill-chip">GCP</span>
-                                <span class="skill-chip">Docker</span>
-                                <span class="skill-chip">Firebase</span>
-                                <span class="skill-chip">React</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-cat-title"><span class="cat-icon genai">&#9889;</span> GenAI & LLMs</div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">LangChain</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="80"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">RAG Pipelines</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="85"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">ChromaDB</span><span class="skill-bar-pct">75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="75"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Groq API / LLM</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="80"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Prompt Engineering</span><span class="skill-bar-pct">82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="82"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Whisper / Pyannote</span><span class="skill-bar-pct">65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill purple" data-width="65"></div></div></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-title"><span class="cat-icon backend">&#9881;</span> Backend</div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill teal" data-width="85"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">FastAPI</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill teal" data-width="80"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">PostgreSQL / SQLAlchemy</span><span class="skill-bar-pct">75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill teal" data-width="75"></div></div></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-title"><span class="cat-icon ml">&#9670;</span> ML & Data</div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Transformers / HuggingFace</span><span class="skill-bar-pct">70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill amber" data-width="70"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">DeBERTa-v3 Fine-tuning</span><span class="skill-bar-pct">65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill amber" data-width="65"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Apache Spark / dbt</span><span class="skill-bar-pct">60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill amber" data-width="60"></div></div></div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-cat-title"><span class="cat-icon tools">&#9650;</span> Tools</div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Git / GitHub</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill red" data-width="85"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Streamlit</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill red" data-width="80"></div></div></div>
+                    <div class="skill-bar"><div class="skill-bar-header"><span class="skill-bar-name">Docker</span><span class="skill-bar-pct">60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill red" data-width="60"></div></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- JOURNEY / EXPERIENCE -->
-    <section id="journey" class="journey">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="journey">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">// JOURNEY</span>
-                <h2 class="section-title">Experience & <span class="highlight">Education</span></h2>
+                <span class="section-tag">// EXPERIENCE</span>
+                <h2 class="section-title">Where I've <span class="highlight">Worked</span></h2>
             </div>
             <div class="journey-timeline">
                 <div class="journey-line"></div>
@@ -532,10 +458,10 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="journey-card">
-                        <div class="journey-date">2026 - Present</div>
-                        <h4>AI / Software Engineering Intern</h4>
+                        <div class="journey-date">Jan 2026 — May 2026 | Completed</div>
+                        <h4>AI Engineer Intern</h4>
                         <p class="journey-org">WeLeap AI, USA (Remote)</p>
-                        <p class="journey-desc">Development, testing, and debugging of scalable web applications. Module-level testing across React UI and Golang backend services. API integrations, Firebase auth flows, and real-time data handling.</p>
+                        <p class="journey-desc">Wrote 10+ autonomous test scripts for LLM-based production features. Identified critical cross-environment configuration bug preventing deployment failure.</p>
                         <div class="journey-tech">
                             <span>React</span><span>Golang</span><span>Firebase</span><span>JavaScript</span>
                         </div>
@@ -545,15 +471,15 @@
                 <div class="journey-item reveal">
                     <div class="journey-node">
                         <div class="node-ring"></div>
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-industry"></i>
                     </div>
                     <div class="journey-card">
-                        <div class="journey-date">2023 - 2027</div>
-                        <h4>B.E. Computer Science & Engineering</h4>
-                        <p class="journey-org">Kamaraj College of Engineering and Technology</p>
-                        <p class="journey-desc">Algorithms, data structures, OS, networks, software engineering. Specialized projects in AI/ML and healthcare informatics. Building the foundation for an AI engineering career.</p>
+                        <div class="journey-date">2026 — In Progress</div>
+                        <h4>Academic Industry Project — Capstone</h4>
+                        <p class="journey-org">Comfort Auto Trims, Hosur</p>
+                        <p class="journey-desc">Building ERP system for automotive upholstery manufacturer. Team of 5. Backend architecture lead. AI-powered inventory demand forecasting and invoice processing.</p>
                         <div class="journey-tech">
-                            <span>CS Core</span><span>AI/ML</span><span>Data Structures</span>
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>AI/ML</span>
                         </div>
                     </div>
                 </div>
@@ -569,40 +495,114 @@
                 <h2 class="section-title">Who <span class="highlight">Am I</span></h2>
             </div>
             <div class="about-grid">
-                <div class="about-terminal reveal">
-                    <div class="terminal-window">
-                        <div class="terminal-bar">
-                            <span class="terminal-dot red"></span>
-                            <span class="terminal-dot yellow"></span>
-                            <span class="terminal-dot green"></span>
-                            <span class="terminal-title">about.py</span>
-                        </div>
-                        <div class="terminal-body">
-                            <p class="terminal-line"><span class="code-kw">class</span> <span class="code-fn">Sandhiya</span>:</p>
-                            <p class="terminal-line indent"><span class="code-kw">def</span> <span class="code-fn">__init__</span>(self):</p>
-                            <p class="terminal-line indent2">self.role = <span class="code-str">"AI Engineer"</span></p>
-                            <p class="terminal-line indent2">self.location = <span class="code-str">"Madurai, India"</span></p>
-                            <p class="terminal-line indent2">self.passion = <span class="code-str">"AI + Healthcare"</span></p>
-                            <p class="terminal-line indent2">self.status = <span class="code-str">"Open to Work"</span></p>
-                            <p class="terminal-line"></p>
-                            <p class="terminal-line indent"><span class="code-kw">def</span> <span class="code-fn">mission</span>(self):</p>
-                            <p class="terminal-line indent2"><span class="code-kw">return</span> <span class="code-str">"""</span></p>
-                            <p class="terminal-line indent2"><span class="code-str">Building intelligent systems that solve</span></p>
-                            <p class="terminal-line indent2"><span class="code-str">real-world problems — from multi-agent</span></p>
-                            <p class="terminal-line indent2"><span class="code-str">healthcare pipelines to NLP transformers.</span></p>
-                            <p class="terminal-line indent2"><span class="code-str">"""</span></p>
+                <div class="about-photo-wrapper reveal">
+                    <div class="about-photo">
+                        <div class="about-photo-inner">
+                            <i class="fas fa-user" style="font-size:3rem;color:var(--neon-purple)"></i>
                         </div>
                     </div>
                 </div>
                 <div class="about-text reveal">
-                    <p>I'm an <strong>AI & Data Engineer</strong> passionate about building intelligent systems that solve real-world problems. With a strong foundation in machine learning, deep learning, and data engineering, I focus on creating scalable solutions using modern AI frameworks.</p>
-                    <p>My expertise spans from developing <strong>multi-agent AI systems</strong> with LangGraph to building robust <strong>ETL pipelines</strong> with dbt and Snowflake. I believe in data-driven decision making and aim to bridge cutting-edge AI research with practical applications.</p>
-                    <p>I'm especially excited about <strong>AI + Healthcare</strong> — where technology can genuinely save lives and improve patient outcomes.</p>
-                    <div class="about-details">
-                        <div class="detail-item"><i class="fas fa-map-marker-alt"></i> Madurai, Tamil Nadu</div>
-                        <div class="detail-item"><i class="fas fa-envelope"></i> sandhiyabk1723@gmail.com</div>
-                        <div class="detail-item"><i class="fas fa-circle" style="color:#00ff88;font-size:0.5rem"></i> Open to AI Engineering Roles</div>
+                    <p>Final year CS student from a tier 3 college in Virudhunagar who builds and ships <strong>production-grade AI systems</strong>. Started with transformer fine-tuning, progressed to RAG pipelines, LLM applications, and full-stack AI products. Currently building an <strong>AI-powered ERP for a real manufacturing company</strong> in Hosur going to production.</p>
+                    <p>I don't wait to be ready. I build in public, learn from real deployment, and document everything. <strong>Targeting AI Engineer roles where skills matter more than college name.</strong></p>
+                    <div class="about-counters">
+                        <div class="about-counter">
+                            <span class="counter-num" data-target="3">0</span>
+                            <span class="counter-label">Deployed Projects</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-num" data-target="9.185" data-decimal="true">0</span>
+                            <span class="counter-label">CGPA</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-num" data-target="200">0</span>
+                            <span class="counter-label">DSA Problems</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-num" data-target="12">0</span>
+                            <span class="counter-label">LinkedIn Posts</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-num" data-target="1">0</span>
+                            <span class="counter-label">Real Company ERP</span>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// ACHIEVEMENTS</span>
+                <h2 class="section-title">Recognition</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal">
+                    <span class="achievement-icon">&#127942;</span>
+                    <div>
+                        <h4>Gold Medalist 2025-26</h4>
+                        <p>Kamaraj College of Engineering — Top of department</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <span class="achievement-icon">&#128202;</span>
+                    <div>
+                        <h4>9.185 CGPA</h4>
+                        <p>Final Year CS — Consistent academic excellence</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <span class="achievement-icon">&#129302;</span>
+                    <div>
+                        <h4>3 Production AI Systems Deployed</h4>
+                        <p>Code Review, Meeting Intelligence, DevCompass — all live</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <span class="achievement-icon">&#128221;</span>
+                    <div>
+                        <h4>Infosys Springboard 2025</h4>
+                        <p>Applied GenAI · ML Foundation · Prompt Engineering</p>
+                    </div>
+                </div>
+                <div class="achievement-card reveal">
+                    <span class="achievement-icon">&#128187;</span>
+                    <div>
+                        <h4>100+ LeetCode Problems</h4>
+                        <p>Pattern-based approach to DSA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUILD IN PUBLIC -->
+    <section id="public" class="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// BUILD IN PUBLIC</span>
+                <h2 class="section-title">I Document Everything</h2>
+            </div>
+            <blockquote class="public-quote reveal">"The students who get noticed are not always the most skilled. They're the most consistently visible."</blockquote>
+            <div class="public-links reveal">
+                <a href="https://linkedin.com/in/sandhiyabk" target="_blank" class="public-link"><span class="link-icon linkedin-icon"><i class="fab fa-linkedin"></i></span> 12+ LinkedIn Posts</a>
+                <a href="https://github.com/sandhiyabk" target="_blank" class="public-link"><span class="link-icon"><i class="fab fa-github"></i></span> 38+ GitHub Repos</a>
+            </div>
+            <div class="post-cards">
+                <div class="post-card reveal">
+                    <div class="post-label">LinkedIn</div>
+                    <p>Documented my journey building a multi-agent healthcare AI system with LangGraph — from architecture decisions to deployment challenges.</p>
+                </div>
+                <div class="post-card reveal">
+                    <div class="post-label">LinkedIn</div>
+                    <p>Shared how I built an AI code review system that prevents LLM hallucinations using AST validation — the full technical breakdown.</p>
+                </div>
+                <div class="post-card reveal">
+                    <div class="post-label">LinkedIn</div>
+                    <p>Wrote about transitioning from tutorial hell to building production systems that real companies actually use.</p>
                 </div>
             </div>
         </div>
@@ -612,35 +612,49 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-tag">// CONNECT</span>
+                <span class="section-tag">// CONTACT</span>
                 <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
-                <p class="section-desc">Open to full-time AI engineering roles, collaborations, and interesting conversations</p>
             </div>
-            <div class="contact-grid">
-                <a href="mailto:sandhiyabk1723@gmail.com" class="contact-card reveal">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <div class="contact-info">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">sandhiyabk1723@gmail.com</span>
-                    </div>
-                    <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
-                </a>
-                <a href="https://github.com/sandhiyabk" target="_blank" class="contact-card reveal">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
-                    <div class="contact-info">
-                        <span class="contact-label">GitHub</span>
-                        <span class="contact-value">github.com/sandhiyabk</span>
-                    </div>
-                    <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
-                </a>
-                <a href="https://linkedin.com/in/sandhiyabk" target="_blank" class="contact-card reveal">
-                    <div class="contact-icon linkedin-icon"><i class="fab fa-linkedin"></i></div>
-                    <div class="contact-info">
-                        <span class="contact-label">LinkedIn</span>
-                        <span class="contact-value">linkedin.com/in/sandhiyabk</span>
-                    </div>
-                    <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
-                </a>
+            <div class="contact-two-col">
+                <div class="contact-text reveal">
+                    <h3>Let's build something real.</h3>
+                    <p>I'm looking for AI Engineer roles in Chennai where I can apply my skills in RAG pipelines, LLM applications, and full-stack AI systems to solve real problems.</p>
+                    <span class="contact-open">Open to AI Engineer roles | 2027 Batch</span>
+                </div>
+                <div class="contact-cards reveal">
+                    <a href="mailto:sandhiyabk1723@gmail.com" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">sandhiyabk1723@gmail.com</span>
+                        </div>
+                        <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="https://linkedin.com/in/sandhiyabk" target="_blank" class="contact-card">
+                        <div class="contact-icon linkedin-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/sandhiyabk</span>
+                        </div>
+                        <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="https://github.com/sandhiyabk" target="_blank" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/sandhiyabk</span>
+                        </div>
+                        <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="https://leetcode.com/sandhiyabk" target="_blank" class="contact-card">
+                        <div class="contact-icon leetcode-icon"><i class="fas fa-code"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">LeetCode</span>
+                            <span class="contact-value">leetcode.com/sandhiyabk</span>
+                        </div>
+                        <div class="contact-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -650,9 +664,9 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-text">
-                    <span class="code-comment">// Designed & built by</span>
-                    <span class="footer-name"> Sandhiya</span>
-                    <span class="code-comment"> &mdash; 2026</span>
+                    <span class="code-comment">// Built by</span>
+                    <span class="footer-name"> Sandhiya BK</span>
+                    <span class="code-comment"> | Kamaraj College of Engineering 2027 | Madurai</span>
                 </p>
             </div>
         </div>
