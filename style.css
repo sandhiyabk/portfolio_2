@@ -902,7 +902,6 @@ img { max-width: 100%; display: block; }
 .skill-bar-fill {
     height: 100%;
     border-radius: 4px;
-    width: 0;
     transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .skill-bar-fill.purple { background: var(--neon-cyan); }

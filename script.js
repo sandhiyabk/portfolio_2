@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initBentoGlow();
     initSmoothScroll();
     initActiveNav();
-    initSkillBars();
 });
 
 /* ===========================
@@ -46,27 +45,6 @@ function initNeuralNetwork() {
             vy: (Math.random() - 0.5) * 0.4,
             r: Math.random() * 2 + 1,
     });
-}
-
-/* ===========================
-   SKILL BARS ANIMATION
-   =========================== */
-function initSkillBars() {
-    const categories = document.querySelectorAll('.skill-category');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const bars = entry.target.querySelectorAll('.skill-bar-fill');
-                bars.forEach((bar, i) => {
-                    setTimeout(() => {
-                        bar.style.width = bar.dataset.width + '%';
-                    }, i * 100);
-                });
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.2 });
-    categories.forEach(cat => observer.observe(cat));
 }
 
     function draw() {
