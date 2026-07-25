@@ -52,18 +52,21 @@ function initNeuralNetwork() {
    SKILL BARS ANIMATION
    =========================== */
 function initSkillBars() {
-    const bars = document.querySelectorAll('.skill-bar-fill');
+    const categories = document.querySelectorAll('.skill-category');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const bar = entry.target;
-                const width = bar.dataset.width;
-                bar.style.width = width + '%';
-                observer.unobserve(bar);
+                const bars = entry.target.querySelectorAll('.skill-bar-fill');
+                bars.forEach((bar, i) => {
+                    setTimeout(() => {
+                        bar.style.width = bar.dataset.width + '%';
+                    }, i * 100);
+                });
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.3 });
-    bars.forEach(bar => observer.observe(bar));
+    }, { threshold: 0.2 });
+    categories.forEach(cat => observer.observe(cat));
 }
 
     function draw() {
