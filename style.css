@@ -181,7 +181,7 @@ img { max-width: 100%; display: block; }
     max-width: 900px;
 }
 .hero-name {
-    font-size: clamp(4rem, 12vw, 7.5rem);
+    font-size: clamp(3rem, 9vw, 5.5rem);
     font-weight: 700;
     letter-spacing: -3px;
     line-height: 1;
@@ -491,7 +491,7 @@ img { max-width: 100%; display: block; }
     background: rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid var(--border);
 }
-.bento-large .bento-visual { height: 200px; }
+.bento-large .bento-visual { height: 160px; }
 .bento-icon-overlay {
     position: absolute;
     inset: 0;
